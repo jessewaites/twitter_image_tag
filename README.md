@@ -6,9 +6,8 @@ prototypes, or bypassing the need to have users upload their own avatar images.
 Ideally, you would have a field in your user onboarding form called
 "twitter handle", and call something like:
 
-<% if current_user %>
-  <%= TwitterImageTag.show_me(current_user.twitter_handle, "normals") %>
-<% end %>
+<%= TwitterImageTag.show_me(current_user.twitter_handle, "normals") %>
+
 
 This image pretty much explains it all:
 
@@ -31,6 +30,9 @@ size the user uploaded.
 ## Installation
 
 Add this line to your application's Gemfile:
+
+NOTE: Make sure you are using the latest version of this gem - it went under a
+significant rewrite.
 
 ```ruby
 gem 'twitter_image_tag'
