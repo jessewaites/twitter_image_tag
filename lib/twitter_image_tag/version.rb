@@ -1,3 +1,3 @@
 module TwitterImageTag
-  VERSION = "1.9.2"
+  VERSION = "1.9.5"
 end

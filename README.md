@@ -1,6 +1,30 @@
 # TwitterImageTag
 
-This gem allows you to easily add Twitter Avatars to your Ruby / Rails app.
+This gem allows you to easily add Twitter Avatar Images to your Ruby / Rails app
+views. Based on the Twitter v1.1 API, the primary usage would be for building out quick
+prototypes, or bypassing the need to have users upload their own avatar images.
+Ideally, you would have a field in your user onboarding form called
+"twitter handle", and call something like:
+
+<% if current_user %>
+  <%= TwitterImageTag.show_me(current_user.twitter_handle, "normals") %>
+<% end %>
+
+This image pretty much explains it all:
+
+![Example](https://pbs.twimg.com/media/CZ1x9D1VAAEWITQ.png:large "Example")
+
+This takes 2 arguments - any valid twitter handle, and any of 4 size options:
+"normal", "bigger", "mini", or "original".
+
+The "normal" image is usually 48 x 48 pixels.
+
+The "bigger" image is usually 73 x 73 pixels.
+
+The "mini" image is usually 24 x 24 pixels.
+
+There's no telling what the "original" image size will be. It is whatever
+size the user uploaded.
 
 
 
@@ -22,7 +46,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+<%= TwitterImageTag.show_me(current_user.twitter_handle, "normal") %>
 
 ## Development
 
