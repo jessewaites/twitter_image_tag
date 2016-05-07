@@ -6,7 +6,7 @@ prototypes, or bypassing the need to have users upload their own avatar images.
 Ideally, you would have a field in your user onboarding form called
 "twitter handle", and call something like:
 
-<%= TwitterImageTag.show_me(current_user.twitter_handle, "normals") %>
+<%= TwitterImageTag.show_me(current_user.twitter_handle, "normal") %>
 
 
 This image pretty much explains it all:
