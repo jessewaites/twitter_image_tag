@@ -1,6 +1,25 @@
 # TwitterImageTag
 
-UPDATE: Unfortunatley this gem does not work anymore. Thanks, Elon! 
+
+
+
+
+
+
+
+
+UPDATE: Unfortunately this gem does not work anymore. Thanks, Elon! 
+
+
+
+
+
+
+
+
+
+
+
 
 This gem allows you to easily add Twitter Avatar Images to your Ruby / Rails app
 views. Based on the Twitter v1.1 API, the primary usage would be for building out quick
